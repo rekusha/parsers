@@ -32,7 +32,7 @@ def get_data(html):
 
 
 def write_csv(data):  # функция для записи полученных данных в csv файл
-    with open('plugins.csv', 'a') as f:  # окрываем файл с именем 'plugins.csv' в режиме 'а' (append)
+    with open('plugins.csv', 'a', newline='') as f:  # окрываем файл с именем 'plugins.csv' в режиме 'а' (append)
         writer = csv.writer(f)  # создаем врайтера для файла f
 
         writer.writerow([data['name'],  # writerow принимает 1 элемент поэтому преобразовываю словарь в список

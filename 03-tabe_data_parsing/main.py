@@ -9,7 +9,7 @@ def get_html(url):
 
 
 def write_csv(data):
-    with open('cmc.csv', 'a') as f:
+    with open('cmc.csv', 'a', newline='') as f:
         writer = csv.writer(f)
         writer.writerow([data['name'], data['symbol'], data['url'], data['price']])  # преобразовали в один объект
         # и записали ряд в файл
