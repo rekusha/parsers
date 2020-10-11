@@ -64,7 +64,7 @@ if __name__ == '__main__':
 
 # .find_next_sibling()
 # .find_previous_sibling()
-# поиск родственных тегов <table> <tr>1</tr> <tr>2</tr> <tr>3</tr> <tr>4</tr> </table> - pацепившись за tr1 можем
+# поиск родственных тегов <table> <tr>1</tr> <tr>2</tr> <tr>3</tr> <tr>4</tr> </table> - зацепившись за tr1 можем
 # перемещаться по tr next(вперед), previous(назад)
 
 # re.findall(pattern, text) - поиск pattern в text
